@@ -1,0 +1,398 @@
+/********************************************************************/
+/* Stylesheet created to costumize bootstrap components for  ********/
+/* the lenguajes de Marcas Landing page (2º evaluacion)      ********/
+/*                                                           ********/
+/* Authora: Esther hitos                                     ********/
+/* Date: 22/01/2022                                          ********/
+/* version: 1.0                                              ********/
+/*                                                           ********/
+/********************************************************************/
+/***************PARAMETROS GENERALES DE LA PAGINA*********************/
+
+* {
+  box-sizing: border-box;
+}
+body{ position: relative;
+      margin:0;
+    }
+
+
+
+@font-face {
+  font-family:letranavegador ;
+  src: url("../fonts/Architects_Daughter/ArchitectsDaughter-Regular.ttf");
+}
+@font-face {
+  font-family:miletra ;
+  src: url("../fonts/Poppins/Poppins-Black.ttf");
+}
+
+/********************HERO SECTION****************************/
+.carousel-inner{
+  font-family: letranavegador;
+  font-size: 2rem;
+}
+
+h5{
+  font-size: xx-large;
+  color: white;
+  font-family: letranavegador;
+  
+}
+
+/********************BARRA DE NAVEGACION****************************/
+
+.navbar{
+  color:white;
+  font-family: letranavegador;
+  z-index: 1020;
+}
+@media all and (min-width: 992px) {
+.dropdown-menu li{ position: relative; 	}
+.nav-item .submenu{ 
+  display: none;
+  position: absolute;
+  left:100%; top:-7px;
+}
+.nav-item .submenu-left{ 
+  left:100%; left:auto;
+}
+.dropdown-menu > li:hover{ background-color: #f1f1f1 }
+.dropdown-menu > li:hover > .submenu{ display: block; }
+}	
+/* ============ desktop view .end// ============ */
+
+/* ============ small devices ============ */
+@media (max-width: 992px) {
+.dropdown-menu .dropdown-menu{
+    margin-left:0.7rem; margin-right:0.7rem; margin-bottom: .5rem;
+}
+}	
+/* ============ small devices .end// ============ */
+/**********************SECCION INTRODUCCION***************/
+
+.masthead{
+  background: linear-gradient(to bottom, rgba(238, 174, 148, 0.8) 0%, rgba(172, 157, 147, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
+  font-family: letranavegador;
+}
+.masthead p{
+  font-family: miletra;
+  font-size: larger;
+}
+/*****************SECCION IDEAS GENERAL**********************************/
+.glass{
+  color: #ecf0f1;
+  padding: 20px;
+  background: rgba( 255, 255, 255, 0.2 );
+  border: solid 1px rgba(255,255,255,.3);
+  background-clip: padding-box;
+  backdrop-filter: blur(2px );
+}
+/*****************SECCION IDEAS PARA ELLOS**********************************/
+#ideasparael{
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+  background-image:url(../images/parael.jpg);
+  width: 100%;
+  height: 100%;
+  font-family: letranavegador;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased; 
+  z-index: 1;
+ }
+ #ideasparael .user-login-box{
+  position: relative;
+  margin-top: 50px;
+  text-align: center;
+  
+}
+#ideasparael .user-login-box > *{
+  display: inline-block;
+  width: 200px;
+}
+
+#ideasparael .user-icon{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-radius: 50%;
+  background-size: contain;
+  background-image: url(../images/el.jpg);
+}
+
+#ideasparael .user-name{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: white;
+  font-family: letranavegador;
+}
+/*****************SECCION IDEAS PARA ELLAS**********************************/
+#ideasparaella{
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+  background-image:url(../images/ideasparaella.jpg);
+  width: 100%;
+  height: 100%;
+  font-family: letranavegador;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  
+}
+#ideasparaella .glass{
+  z-index: -1;
+}
+#ideasparaella.user-login-box{
+  position: relative;
+  margin-top: 50px;
+  text-align: center;
+  
+}
+
+#ideasparaella .user-login-box > *{
+  display: inline-block;
+  width: 200px;
+}
+
+#ideasparaella .user-icon{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-radius: 50%;
+  background-size: contain;
+  background-image: url(../images/el.jpg);
+}
+
+#ideasparaella .user-name{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: white;
+  font-family: letranavegador;
+}
+/* #ideasparaella .blurred-box,#ideasparael .blurred-box{
+  position: relative;
+  width: 250px;
+  height: 350px;
+  top: calc(50% - 175px);
+  left: calc(50% - 125px);
+  background: inherit;
+  border-radius: 2px;
+  overflow: hidden;
+}*/
+
+/*#ideasparael .blurred-box,#ideasparaella.blurred-box{
+  position: relative;
+  width: 250px;
+  height: 350px;
+  top: calc(50% - 175px);
+  left: calc(50% - 125px);
+  background: inherit;
+  border-radius: 2px;
+  overflow: hidden;
+  z-index: -1;
+}*/
+
+/*#ideasparael .blurred-box:after,#ideasparaella.blurred-box:after{
+ content: '';
+ width: 300px;
+ height: 300px;
+ background: inherit; 
+ position: absolute;
+ left: -25px;
+ right: 0;
+ top: -25px;  
+ bottom: 0;
+ box-shadow: inset 0 0 0 200px rgba(255,255,255,0.05);
+ filter: blur(10px);
+}*/
+
+/**************SECCION DE GALERIA********************************/
+#portfolio .paraella,#portfolio .parael, #portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl, #portfolio .container-xxl {
+  max-width: 1920px;
+}
+#portfolio .paraella,#portfolio .parael, #portfolio .container-fluid .portfolio-box, #portfolio .container-sm .portfolio-box, #portfolio .container-md .portfolio-box, #portfolio .container-lg .portfolio-box, #portfolio .container-xl .portfolio-box, #portfolio .container-xxl .portfolio-box {
+  position: relative;
+  display: block;
+}
+#portfolio .paraella,#portfolio .parael, #portfolio .container-fluid .portfolio-box .portfolio-box-caption, #portfolio .container-sm .portfolio-box .portfolio-box-caption, #portfolio .container-md .portfolio-box .portfolio-box-caption, #portfolio .container-lg .portfolio-box .portfolio-box-caption, #portfolio .container-xl .portfolio-box .portfolio-box-caption, #portfolio .container-xxl .portfolio-box .portfolio-box-caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+  background: linear-gradient(to bottom, rgba(238, 174, 148, 0.8) 0%, rgba(172, 157, 147, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
+  transition: opacity 0.25s ease;
+  text-align: center;
+}
+#portfolio .paraella,#portfolio .parael,#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-xxl .portfolio-box .portfolio-box-caption .project-category {
+  font-family: miletra;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#portfolio .paraella,#portfolio .parael,#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xxl .portfolio-box .portfolio-box-caption .project-name {
+  font-size: 1.2rem;
+}
+#portfolio .paraella,#portfolio .parael,#portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
+  opacity: 1;
+}
+/*************************************************************/
+#inlineFrameExample {
+  width: 105%;
+  height: 500px;
+ 
+}
+#inlineFrameExample {
+  border: 1px solid black;
+  width: 100%;
+  height: 40%;
+}
+
+.output {
+  background: #eee;
+}
+@media screen and (max-width: 768px) {
+  #inlineFrameExample {
+    height: 200px;
+  }
+}
+/****************SECCION DE FRASES***************************/
+.titulo{
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+  background-image:url(../images/titulofrases.png);
+  font-family: letranavegador;
+  letter-spacing: 0.02em;
+  font-weight: bold;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  color: #ecf0f1;
+  padding: 10px;
+  background-clip: padding-box;
+  backdrop-filter: blur(2px );
+  text-align: center;
+}
+#frases .glass{
+  z-index: -1;
+}
+#frases .user-icon{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-radius: 50%;
+  background-size: contain;
+  background-image: url(../images/frases.png);
+}
+
+#frases{
+background-position: center;
+background: linear-gradient(to bottom, rgba(238, 174, 148, 0.8) 0%, rgba(172, 157, 147, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
+font-family: miletra;
+
+}
+
+h5{
+  text-align: center;
+  font-family: letranavegador;
+  color: white;
+}
+#frases .contenedor {
+  background: rgba(255,255,255,0.3);
+  padding: 1rem;
+  height: auto;
+  border-radius: 20px;
+  border-left: 1px solid rgba(255,255,255,0.3);
+  border-top: 1px solid rgba(255,255,255,0.3);
+  backdrop-filter: blur(10px);
+  box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+  text-align: center;
+  background-position: absolute;
+  position: unset;
+  background: rgba(255,255,255,0.3);
+}
+
+
+
+::placeholder {
+  font-family: letranavegador;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+
+.card {
+  background-position: center;
+  background: rgba(172, 157, 147, 0.8) 100%;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border-left: 1px solid rgba(255,255,255,0.3);
+  border-top: 1px solid rgba(255,255,255,0.3);
+  box-shadow: 10px 10px 60px -8px rgba(0,0,0,0.2);
+
+  
+} 
+
+#frases a,
+#frases input:focus,
+#frases select:focus,
+#frases textarea:focus,
+#frases button:focus {
+    outline: none;
+}
+
+/****************FOOTER**************************************/
+.footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #2c3e50;
+  color: #fff;
+  font-family: letranavegador;
+}
+
+.copyright {
+  background-color: #1a252f;
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+}
+footer {
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+  font-size: 0.875em;
+  color: #6c757d;
+  background: linear-gradient(to bottom, rgba(238, 174, 148, 0.8) 0%, rgba(172, 157, 147, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
+}
+footer::before {
+  content: "— ";
+}
+footer {
+  border-top: 0;
+}
+footer {
+  padding: 0.5rem 1rem;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-top: 0.125rem solid rgba(0, 0, 0, 0.125);
+}
+@media (min-width: 576px) {
+
+footer {
+    border-bottom-right-radius: 0;
+  }
+
+footer {
+    border-bottom-left-radius: 0;
+  }
+}
